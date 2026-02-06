@@ -196,6 +196,104 @@ body{
   line-height: 1.7;
 }
 
+/* ===== Header divider (thin line under header) ===== */
+.header-divider{
+  height: 4px;
+  background: #7b2cff; /* purple-ish line like your screenshot */
+}
+
+/* ===== About Page ===== */
+.page-about .topbar{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.about-hero{
+  background: #141f49; /* navy */
+  color: #fff;
+  padding: 46px 18px 22px;
+}
+
+/* .about-hero__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+.about-hero__title{
+  margin: 0;
+  font-size: clamp(42px, 5.5vw, 84px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.about-hero__subtitle{
+  margin-top: 10px;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(14px, 1.8vw, 20px);
+  opacity: .92;
+}
+
+.about-hero__subtitle span{
+  letter-spacing: .04em;
+}
+
+.about-hero__photo-wrap{
+  margin-top: 18px;
+  margin-bottom: -120px; /* ⬅ PULL photo DOWN into the white section */
+  display: flex;
+  justify-content: center;
+  /* margin-top: 32px;
+  display: flex;
+  justify-content: center; */
+}
+
+.about-hero__photo{
+  width: min(420px, 82vw);
+  aspect-ratio: 1 / 1;       /* ensures square */
+  object-fit: cover;         /* crops nicely if needed */
+  border-radius: 2px;        /* nearly square like screenshot */
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(0,0,0,.28);
+}
+
+/* Content section */
+.about-content{
+  background: #ffffff;
+  color: #111;
+  padding: 150px 18px 90px;
+}
+
+.about-content__inner{
+  max-width: 1050px;
+  margin: 0 auto;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.85;
+}
+
+.about-content__inner p{
+  margin: 0 0 28px;
+  color: #1a1a1a;
+}
+
+/* Active nav link (optional) */
+.nav__link.is-active{
+  opacity: 1;
+}
+
+/* Responsive tightening */
+@media (max-width: 720px){
+  .about-hero{
+    padding: 42px 16px 56px;
+  }
+  .about-content{
+    padding: 42px 16px 70px;
+  }
+}
+
+
 /* ====== Responsive tweaks ====== */
 @media (max-width: 720px){
   .topbar__inner{
@@ -209,3 +307,4 @@ body{
     height: 18px;
   }
 }
+
