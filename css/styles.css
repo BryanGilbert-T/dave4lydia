@@ -224,7 +224,7 @@ body{
 
 .about-hero__title{
   margin: 0;
-  font-size: clamp(42px, 5.5vw, 84px);
+  font-size: clamp(42px, 5.5vw, 64px);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -232,7 +232,7 @@ body{
 .about-hero__subtitle{
   margin-top: 10px;
   font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
-  font-size: clamp(14px, 1.8vw, 20px);
+  font-size: clamp(14px, 1.8vw, 18px);
   opacity: .92;
 }
 
