@@ -369,6 +369,57 @@ body{
   text-shadow: 0 8px 16px rgba(0,0,0,.35);
 }
 
+/* ===== Testimoni (image-based) ===== */
+.page-testimoni{
+  background: #141f49;           /* navy behind cards */
+}
+
+.testi-hero{
+  background: #141f49;
+  padding: 15px 16px 22px;
+  text-align: center;
+}
+
+.testi-hero__title{
+  margin: 0;
+  color: #fff;
+  font-size: clamp(28px, 3.8vw, 48px);
+  font-weight: 800;
+}
+
+.testi-hero__subtitle{
+  margin-top: 6px;
+  font-size: 13px;
+  letter-spacing: .14em;
+  color: rgba(255,255,255,.75);
+}
+
+/* 2x2 grid of images */
+.testi-img-grid{
+  background: #141f49;           /* navy behind cards */
+  padding: 5px 10px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testi-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.28);
+}
+
+/* Mobile: 1 column */
+@media (max-width: 900px){
+  .testi-img-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Responsive: stack into 1 column */
 @media (max-width: 900px){
   .why-grid{
