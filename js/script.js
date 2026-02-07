@@ -1,6 +1,6 @@
 // Simple behaviors: smooth scroll for About link + Proceed button navigation
 
-const PROCEED_URL = "about.html";
+const PROCEED_URL = "why.html";
 
 document.addEventListener("DOMContentLoaded", () => {
   const proceedBtn = document.getElementById("proceedBtn");
