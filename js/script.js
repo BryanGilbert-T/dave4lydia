@@ -14,3 +14,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const envelopeBtn = document.querySelector(".thanks-envelope");
+  const modal = document.getElementById("rewardModal");
+
+  if (envelopeBtn && modal) {
+    const open = () => {
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+    };
+
+    const close = () => {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+    };
+
+    envelopeBtn.addEventListener("click", open);
+
+    // click outside image closes
+    modal.addEventListener("click", (e) => {
+      if (e.target.dataset.close === "true") close();
+    });
+
+    // ESC closes
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  }
+});
+

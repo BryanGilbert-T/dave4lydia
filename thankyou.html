@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<!-- Reward Modal -->
+<div class="reward-modal" id="rewardModal" aria-hidden="true">
+  <div class="reward-modal__backdrop" data-close="true"></div>
+
+  <div class="reward-modal__content" role="dialog" aria-modal="true">
+    <img src="assets/reward.png" alt="Reward" class="reward-modal__img">
+  </div>
+</div>
+
+
+<body class="page-thankyou">
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/signature.png" alt="Signature" class="brand__logo">
+      </a>
+
+      <div class="crest" aria-label="Crest">
+        <img src="assets/crest.png" alt="Crest" class="crest__img">
+      </div>
+
+      <nav class="nav">
+        <a class="nav__link nav__link--flag" href="about.html">
+          <img src="assets/us-flag.png" alt="US Flag" class="nav__flag-img">
+          <span>About Us</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header-divider"></div>
+
+  <!-- Navy title band -->
+  <section class="thanks-hero">
+    <h1 class="thanks-hero__title">Thank You for Voting!</h1>
+    <p class="thanks-hero__subtitle">HERE IS YOUR REWARD</p>
+  </section>
+
+  <!-- Background image section -->
+  <main class="thanks-stage">
+    <!-- background photo -->
+    <div class="thanks-stage__bg" aria-hidden="true"></div>
+    <div class="thanks-stage__overlay" aria-hidden="true"></div>
+
+    <!-- centered envelope -->
+    <button class="thanks-envelope" type="button" aria-label="Open reward">
+      <img src="assets/envelope.png" alt="Reward Envelope">
+    </button>
+  </main>
+
+</body>
+</html>
