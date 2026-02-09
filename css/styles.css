@@ -146,6 +146,7 @@ body{
   color: var(--muted);
   line-height: 1.6;
   text-shadow: 0 8px 18px rgba(0,0,0,.30);
+  font-weight: bold;
 }
 
 .hero__actions{
@@ -286,7 +287,7 @@ body{
 
 /* ===== Why Choose Dave Page ===== */
 .page-why{
-  background: #0b0b0b;
+  background: #141f49;           /* navy behind cards */
 }
 
 /* Title band */
@@ -311,16 +312,29 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
+  padding: 0 50px;
 }
 
 /* Card */
 .why-card{
   position: relative;
   min-height: 360px;
-  background-image: var(--bg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
+}
+
+.why-card--1{
+    background-image: url("../assets/why-3.jpg");
+}
+.why-card--2{
+    background-image: url("../assets/why-4.jpg");
+}
+.why-card--3{
+    background-image: url("../assets/why-1.jpg");
+}
+.why-card--4{
+    background-image: url("../assets/why-2.jpg");
 }
 
 .why-card__overlay{
@@ -628,4 +642,49 @@ body{
     height: 18px;
   }
 }
+
+/* ===== Footer ===== */
+.footer{
+  background: #f5c400; /* yellow */
+  border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.footer__inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.footer__right{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__logo{
+  height: 22px;       /* adjust if needed */
+  width: auto;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 720px){
+  .footer__inner{
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+  .footer__right{
+    justify-content: center;
+  }
+}
+
 
