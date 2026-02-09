@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vote Dave</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/main.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body class="page-vote">
@@ -44,10 +44,28 @@
   <!-- Content -->
   <main class="vote-main">
     <div class="vote-actions">
-      <button class="btn btn--primary vote-btn">Yes</button>
-      <button class="btn btn--primary vote-btn">Yes</button>
+      <button id="yesbutton-1" class="btn btn--primary vote-btn">Yes</button>
+      <button id="yesbutton-2" class="btn btn--primary vote-btn">Yes</button>
     </div>
   </main>
+<footer class="footer">
+  <div class="footer__inner">
+    <!-- Left -->
+    <div class="footer__left">
+      © <span id="year"></span> Dave S. Saputra. All rights reserved.
+    </div>
+
+    <!-- Right -->
+    <div class="footer__right">
+        <img
+            src="assets/pepperlunch.png"
+            alt="Pepper Lunch Logo"
+            class="footer__logo"
+        />
+      <span>Made by Bryan, Pepper Lunch Head Chef</span>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 const PROCEED_URL = "why.html";
 const WHYPROCEED_URL = "testimoni.html";
 const TESTIPROCEED_URL = "vote.html";
+const VOTEPROCEED_URL = "thankyou.html";
 
 document.addEventListener("DOMContentLoaded", () => {
   const proceedBtn = document.getElementById("proceedBtn");
@@ -37,6 +38,24 @@ document.addEventListener("DOMContentLoaded", () => {
   if (proceedBtn) {
     proceedBtn.addEventListener("click", () => {
       window.location.href = TESTIPROCEED_URL;
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const proceedBtn1 = document.getElementById("yesbutton-1");
+  const proceedBtn2 = document.getElementById("yesbutton-2");
+
+  // Change this to wherever "Proceed" should go
+  // Example: "form.html" or "/vote/" or "https://..."
+
+  if (proceedBtn1) {
+    proceedBtn1.addEventListener("click", () => {
+      window.location.href = VOTEPROCEED_URL;
+    });
+  }
+  else if (proceedBtn2) {
+    proceedBtn2.addEventListener("click", () => {
+      window.location.href = VOTEPROCEED_URL;
     });
   }
 });
