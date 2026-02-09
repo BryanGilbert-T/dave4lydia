@@ -1,6 +1,8 @@
 // Simple behaviors: smooth scroll for About link + Proceed button navigation
 
 const PROCEED_URL = "why.html";
+const WHYPROCEED_URL = "testimoni.html";
+const TESTIPROCEED_URL = "vote.html";
 
 document.addEventListener("DOMContentLoaded", () => {
   const proceedBtn = document.getElementById("proceedBtn");
@@ -11,6 +13,30 @@ document.addEventListener("DOMContentLoaded", () => {
   if (proceedBtn) {
     proceedBtn.addEventListener("click", () => {
       window.location.href = PROCEED_URL;
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const proceedBtn = document.getElementById("whyproceedBtn");
+
+  // Change this to wherever "Proceed" should go
+  // Example: "form.html" or "/vote/" or "https://..."
+
+  if (proceedBtn) {
+    proceedBtn.addEventListener("click", () => {
+      window.location.href = WHYPROCEED_URL;
+    });
+  }
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const proceedBtn = document.getElementById("testiproceedBtn");
+
+  // Change this to wherever "Proceed" should go
+  // Example: "form.html" or "/vote/" or "https://..."
+
+  if (proceedBtn) {
+    proceedBtn.addEventListener("click", () => {
+      window.location.href = TESTIPROCEED_URL;
     });
   }
 });
